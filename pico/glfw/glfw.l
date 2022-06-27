@@ -153,10 +153,13 @@
 # B = 5
 # L = 6
 # R = 7
-(def 'MOUSE-SCROLL-UP            (+ MOUSE-BUTTON-LAST 1))
-(def 'MOUSE-SCROLL-DOWN          (+ MOUSE-BUTTON-LAST 2))
-(def 'MOUSE-SCROLL-LEFT          (+ MOUSE-BUTTON-LAST 3))
-(def 'MOUSE-SCROLL-RIGHT         (+ MOUSE-BUTTON-LAST 4))
+(def 'MOUSE-SCROLL-UP             (+ MOUSE-BUTTON-LAST 1))
+(def 'MOUSE-SCROLL-DOWN           (+ MOUSE-BUTTON-LAST 2))
+(def 'MOUSE-SCROLL-LEFT           (+ MOUSE-BUTTON-LAST 3))
+(def 'MOUSE-SCROLL-RIGHT          (+ MOUSE-BUTTON-LAST 4))
+
+# custom event
+(def 'MOUSE-POINTER-POS           (+ MOUSE-BUTTON-LAST 5))
 
 (def 'HAT-CENTERED                0)
 (def 'HAT-UP                      1)
