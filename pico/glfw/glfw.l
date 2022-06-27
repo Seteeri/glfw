@@ -146,6 +146,18 @@
 (def 'MOUSE-BUTTON-RIGHT          MOUSE-BUTTON-2)
 (def 'MOUSE-BUTTON-MIDDLE         MOUSE-BUTTON-3)
 
+# GLFW does not define a button for scroll so create custom mapping
+# Use MOUSE-BUTTON-LAST+
+# From xev, up=4, dn=5 so up=MOUSE-BUTTON-LAST+1 dn=MOUSE-BUTTON-LAST+2
+# F = 4
+# B = 5
+# L = 6
+# R = 7
+(def 'MOUSE-SCROLL-UP            (+ MOUSE-BUTTON-LAST 1))
+(def 'MOUSE-SCROLL-DOWN          (+ MOUSE-BUTTON-LAST 2))
+(def 'MOUSE-SCROLL-LEFT          (+ MOUSE-BUTTON-LAST 3))
+(def 'MOUSE-SCROLL-RIGHT         (+ MOUSE-BUTTON-LAST 4))
+
 (def 'HAT-CENTERED                0)
 (def 'HAT-UP                      1)
 (def 'HAT-RIGHT                   2)
